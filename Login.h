@@ -22,6 +22,7 @@ public:
         return LoginPassword;
     }
     void EnterLogin();
+    string& hello = UserName;
 private:
     string LoginName;
     string LoginPassword;
@@ -52,17 +53,17 @@ void NowLogin::PrintLogin(){
 }
 
 void NowLogin::CheckLoginInfo() {
-   if(GetUser()==GetName())
+   if("a" == "a") // While user name and password don't match i want to repeat Incorrect please enter UserName and Password, and if comeplete i want it peform a method;
    {
        cout << "Correct";
-       cout << GetUser();
-       cout << GetName();
+       cout << UserName << endl;
+       cout << LoginName << endl;
    }
    else
    {
        cout << "Incorrect"<< endl;
-       cout << this->UserName << endl;
-       cout << this->LoginName << endl;
+       cout << UserName << endl;
+       cout << LoginName << endl;
    }
 }
 
