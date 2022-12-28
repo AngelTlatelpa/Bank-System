@@ -20,7 +20,7 @@ public:
     void FakeSSN();
     void print();
     string GetUser(){
-        return this->UserName;
+        return UserName;
     }
 
     string GetCreatedPassword(){
@@ -29,10 +29,10 @@ public:
 };
 
 CreateAccount::CreateAccount() {
-    this->email = "null";
-    this->SSN = "null";
-    this->UserName = "none";
-    this->Password = "none";
+    this->email = "n";
+    this->SSN = "n";
+    this->Password = "n";
+    this->UserName = "n";
 }
 
 void CreateAccount::Welcome()
